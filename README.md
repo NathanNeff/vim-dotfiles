@@ -30,3 +30,12 @@ of https://github.com/tpope/vim-pathogen
 * NERDTree
 
 =git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle=
+
+## Adding plugins
+
+You simply need to git-clone new plugins to the =bundle= subdirectory
+(See "Installed Plugins" above)
+
+To initialize the help tags, run =:Helptags= in vim, which will
+go through all dirs in =bundle= and add the documentation to Vim's
+help section. (This is a part of =pathogen=, not mine)
