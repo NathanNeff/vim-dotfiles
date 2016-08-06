@@ -44,6 +44,11 @@ of https://github.com/tpope/vim-pathogen
 
 =git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle=
 
+* CtrlP
+
+=git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim=
+
+
 ## Adding plugins
 
 You simply need to git-clone new plugins to the =bundle= subdirectory
