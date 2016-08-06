@@ -26,9 +26,8 @@ Therefore, in order to exactly replicate the functionality
 in these vim-dotfiles you need to:
 
 ```bash
-cd ~/.vimrc
-mkdir bundle
-cd bundle
+cd ~/.vim
+mkdir bundle && cd bundle
 git clone https://github.com/tpope/vim-pathogen.git
 ```
 
