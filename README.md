@@ -5,6 +5,20 @@ them, but these are mine.
 
 ## Installation / Bootstrap
 
+### Vimrc
+
+Vim reads your configuration settings from ~/.vimrc, so you need to
+link/move =vimrc= from this project to your ~/.vimrc file.
+
+One way to do that is:
+
+```bash
+cd ~
+git clone https://github.com/NathanNeff/vim-dotfiles.git
+mv ~/.vimrc ~/.vimrcbackup # can't be too safe
+ln -s vim-dotfiles/vimrc ~/.vimrc
+```
+
 TL;DR The plugins I use are *not* part of this Git repository
 (not even as submodules).
 
