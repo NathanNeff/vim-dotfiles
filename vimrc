@@ -39,7 +39,7 @@ function! TmuxMove(direction)
         silent! execute 'wincmd ' . a:direction
         " If the winnr is still the same after we moved, it is the last pane
         if wnr == winnr()
-                call system('tmux select-pane -' . tr(a:direction, 'phjkl', 'lLDUR'))
+                call system('tmux select-pane -t '  . shellescape($TMUX_PANE) . ' -' . tr(a:direction, 'phjkl', 'lLDUR'))
         end
 endfunction
 
