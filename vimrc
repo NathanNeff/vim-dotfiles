@@ -1,5 +1,8 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
+set bg=light
+
 filetype plugin indent on
 syntax enable
 set nocompatible
