@@ -5,11 +5,15 @@ set bg=light
 
 filetype plugin indent on
 syntax enable
+set smartindent
 set nocompatible
 set hidden
 set nowrap
 set ignorecase
 set smartcase
+set expandtab
+set tabstop=4
+set shiftwidth=4
 " Don't prompt to save text read from STDIN
 au StdinReadPost * set buftype=nofile
 
