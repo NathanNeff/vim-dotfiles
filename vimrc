@@ -14,6 +14,11 @@ set smartcase
 set expandtab
 set tabstop=4
 set shiftwidth=4
+" Show statusline always
+set laststatus=2
+" Set backup directory other than current dir.
+set directory=~/tmp,/tmp
+
 " Don't prompt to save text read from STDIN
 au StdinReadPost * set buftype=nofile
 
