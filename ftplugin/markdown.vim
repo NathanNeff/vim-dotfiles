@@ -20,12 +20,15 @@ function! MarkdownLevel()
     return "=" 
 endfunction
 " Set syntax highlighting for markdown
+hi Title ctermfg=darkblue
 hi! link Folded Title
+" Don't print the annoying ------ when line is folded
+setlocal fillchars-=fold:-
+
 set foldtext=MarkdownFoldText()
 function! MarkdownFoldText()
-    let line = getline(v:foldstart)
-    let sub = substitute(line, '/\*\|\*/\|{{{\d\=', '', 'g')
-    return sub
+    return getline(v:foldstart) . " +"
 endfunction
-au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
-au BufEnter *.md setlocal foldmethod=expr  
+
+setlocal foldexpr=MarkdownLevel()  
+setlocal foldmethod=expr  
