@@ -32,6 +32,7 @@ map <C-l> <C-W>l
 
 " Plugin-specific settings {{{1
 map <F2> :NERDTreeToggle<CR>
+let g:NERDTreeHijackNetrw=0
 
 function! TmuxMove(direction)
         let wnr = winnr()
