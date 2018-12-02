@@ -10,13 +10,18 @@ function! OrgModeLevel()
     endif
     return "=" 
 endfunction
+
+" Don't print the annoying ------ when line is folded
+setlocal fillchars-=fold:-
+
 " Set syntax highlighting for markdown
 hi Title ctermfg=darkblue
 hi! link Folded Title
+
 set foldtext=OrgFoldText()
 function! OrgFoldText()
-    setlocal fillchars-=fold:-
-    return getline(v:foldstart) . " " . v:folddashes 
+    return getline(v:foldstart) . " +"
 endfunction
+
 setlocal foldexpr=OrgModeLevel()  
 setlocal foldmethod=expr  
