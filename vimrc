@@ -30,6 +30,9 @@ map <C-k> <C-W>k
 map <C-j> <C-W>j
 map <C-l> <C-W>l
 
+" Python
+autocmd FileType python nnoremap <buffer> <F5> :update<bar>!python3 %<CR>
+
 " Plugin-specific settings {{{1
 map <F2> :NERDTreeToggle<CR>
 let g:NERDTreeHijackNetrw=0
