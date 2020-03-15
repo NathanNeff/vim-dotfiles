@@ -2,6 +2,11 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 set bg=light
+" equals signs should not be part of a filename
+" This makes Ctrl-X Ctrl-F work correctly in shell scripts
+" with lines such as:
+" set FOO=/Users/nate/blah<cursor here> 
+set isfname-==
 
 filetype plugin indent on
 syntax enable
