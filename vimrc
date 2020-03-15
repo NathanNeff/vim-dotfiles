@@ -8,7 +8,8 @@ set bg=light
 " set FOO=/Users/nate/blah<cursor here> 
 set isfname-==
 
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 syntax enable
 set smartindent
 set nocompatible
