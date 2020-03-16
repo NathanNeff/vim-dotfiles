@@ -34,16 +34,16 @@ map <leader>f :w<CR>
 map <Space> :bn<CR>
 
 " map <C-h> <C-W>h
-map ^h <C-W>h
+map h <C-W>h
 
 " map <C-k> <C-W>k
-map ^k <C-W>k
+map k <C-W>k
 
 " map <C-j> <C-W>j
-map ^j <C-W>j
+map j <C-W>j
 
 " map <C-l> <C-W>l
-map ^l <C-W>l
+map l <C-W>l
 
 " Python
 autocmd FileType python nnoremap <buffer> <F5> :update<bar>!python3 %<CR>
@@ -62,13 +62,13 @@ function! TmuxMove(direction)
 endfunction
 
 " nnoremap <silent> <c-h> :call TmuxMove('h')<cr>
-nnoremap <silent> ^h :call TmuxMove('h')<cr>
+nnoremap <silent> h :call TmuxMove('h')<cr>
 " nnoremap <silent> <c-j> :call TmuxMove('j')<cr>
-nnoremap <silent> ^j :call TmuxMove('j')<cr>
+nnoremap <silent> j :call TmuxMove('j')<cr>
 " nnoremap <silent> <c-k> :call TmuxMove('k')<cr>
-nnoremap <silent> ^k :call TmuxMove('k')<cr>
+nnoremap <silent> k :call TmuxMove('k')<cr>
 " nnoremap <silent> <c-l> :call TmuxMove('l')<cr>
-nnoremap <silent> ^l :call TmuxMove('l')<cr>
+nnoremap <silent> l :call TmuxMove('l')<cr>
 
 let g:ctrlp_types = [ 'fil', 'buf' ]
 let g:ctrlp_cmd = 'CtrlPCurWD'
@@ -83,4 +83,4 @@ au BufNewFile,BufRead *.py
     \set autoindent
     \set fileformat=unix
 " Load matchit plugin
-" runtime macros/matchit.vim
+runtime macros/matchit.vim
