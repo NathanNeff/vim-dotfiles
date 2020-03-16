@@ -73,5 +73,14 @@ nnoremap <silent> ^l :call TmuxMove('l')<cr>
 let g:ctrlp_types = [ 'fil', 'buf' ]
 let g:ctrlp_cmd = 'CtrlPCurWD'
 
+" https://realpython.com/vim-and-python-a-match-made-in-heaven/#code-folding
+au BufNewFile,BufRead *.py
+    \set tabstop=4
+    \set softtabstop=4
+    \set shiftwidth=4
+    \set textwidth=79
+    \set expandtab
+    \set autoindent
+    \set fileformat=unix
 " Load matchit plugin
 " runtime macros/matchit.vim
