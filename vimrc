@@ -15,6 +15,10 @@ set bg=light
 " set FOO=/Users/nate/blah<cursor here> 
 set isfname-==
 
+" Copy current filename to clipboard
+" https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
+map <leader>cp :let @" = expand("%:p")<CR>
+
 filetype plugin on
 filetype indent on
 syntax enable
