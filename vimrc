@@ -1,3 +1,10 @@
+set nocompatible
+set smartindent
+set autoindent
+set paste
+
+let mapleader=" "
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
