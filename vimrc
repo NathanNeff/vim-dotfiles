@@ -8,6 +8,8 @@ let mapleader=" "
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+map <F8> magg"*yG'a
+
 set bg=light
 " equals signs should not be part of a filename
 " This makes Ctrl-X Ctrl-F work correctly in shell scripts
