@@ -32,3 +32,5 @@ endfunction
 
 setlocal foldexpr=MarkdownLevel()  
 setlocal foldmethod=expr  
+
+map <F5> :!~/bin/mdconverter.sh %:p %:p:r.html %:t:r<CR>
