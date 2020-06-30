@@ -19,11 +19,10 @@ set isfname-==
 " https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
 map <leader>cp :let @" = expand("%:p")<CR>
 
+filetype on
 filetype plugin on
 filetype indent on
 syntax enable
-set smartindent
-set nocompatible
 set hidden
 set nowrap
 set ignorecase
